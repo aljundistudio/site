@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vw;
+    position: relative;
+    /* overflow-x: hidden;
+    overflow-x: -webkit-hidden; */
+}
+
+.hide{
+    display: none;
+}
+
+
+
+/* Font styles */
+
+.light{font-weight: 300;}.medium{font-weight: 500;}.bold{font-weight: 700;}
+
+.rem05{font-size: 0.5rem;}.rem1{font-size: 1rem;}.rem1-5{font-size: 1.5rem;}.rem2{font-size: 2rem;}.rem3{ font-size: 3rem;}.rem4{font-size: 4rem;}.rem6{font-size: 6rem;}
+
+
+/* margins */
+
+    /* top */
+    .marginTop05{margin-top: 0.5rem;}.marginTop1{margin-top: 1rem;}.marginTop2{margin-top: 2rem;}.marginTop3{ margin-top: 3rem;}.marginTop4{margin-top: 4rem !important;}
+
+    /* bottom */
+    .marginbottom1{ margin-bottom: 1rem;}.marginbottom2{ margin-bottom: 2rem;}.marginbottom3{margin-bottom: 3rem;}.marginbottom4{ margin-bottom: 4rem !important;}
+
+
+
+    /* colors */
+
+    .JundiBlue{color : #1e5ba7;}.JundiBlue1{color : #aeb7de;}.JundiBlue2{color : #5476b9;}.JundiBlue3{color : #23406c;}.JundiBlue4{color : #0f141e;}
+    
+    .JundiRed{  color : #cc3a39;}
+    .JundiPuple{ color : #9c4b97;}
+    .JundiYellow{  color : #fff03e; }
+    .JundiGreen{    color : #87c27a;}
+    .white{ color: white;}
+    
+
+
+/* logo */
+
+#logo{
+    width: 40px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+#logotype{
+    width: 300px ;
+}
+
+/* sidebar css */
+
+.sidebar{
+    height: 100vh;
+    width: 125px;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+
+    background-color:white;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
+    box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15)
+}
+
+#menu-icon{
+    width: 40px;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+#x-icon{
+    width: 50px;
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    text-align: left;
+    font-size: 2rem;
+    left:160px;
+    top:35px;
+    
+    }
+    
+    /* Menu/sidebar */
+
+    .menu ul li{
+        list-style-type: none;
+        margin-bottom:5px ;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color:#1e5ba7;
+        font-weight: 300;
+        transition: 0.09s;
+    
+    }
+    
+    .menu ul li a:hover{
+        text-decoration: none;
+        color:#1e5ba7;
+        font-weight: 700;
+    
+    }
+    
+    #menu-icon:hover{
+        
+        fill: none;
+        stroke: #1e5ba7;
+        stroke-width: 3px;     
+    }
+
+    #x-icon:hover{
+        
+        fill: none;
+        stroke: #1e5ba7;
+        stroke-width: 3px;
+    }
+    
+
+
+
+
+
+
+
+
+/* Main css */
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    padding-left: 125px;
+    position: relative;
+
+    color: white;
+    background: rgb(30,91,167);
+    background: linear-gradient(90deg, rgba(30,91,167,1) 0%, rgba(15,20,30,1) 100%)
+}
+
+.main .content {
+    padding-left: 2rem ;
+    position: absolute;
+    z-index: 3;
+   
+}
+
+
+.paddingSide7{
+    padding-left: 11% !important ;
+    padding-right: 10% !important;
+    padding-bottom: 10% !important;
+}
+
+.main p{
+    margin-top:2rem ;
+    margin-bottom:3rem ;
+}
+
+.abdu{
+    position: absolute;
+    width: 600px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+.jundi-bar{
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    left:0px;
+    padding-left: 125px;
+}
+
+.button{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 0.5rem 1rem;
+
+    transition: 0.1s ease-in-out;
+
+    color: white;
+    border: 4px solid white;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.button-blue{
+    text-decoration: none;
+    font-weight: 700 ;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 0.5rem 1rem;
+
+    transition: 0.1s ease-in-out;
+
+    color: rgb(30,91,167) !important;
+    border: 4px solid rgb(30,91,167);
+    background-color: rgba(0,0,0,0.0);
+}
+
+
+    /* hover/main */
+
+    .button:hover{
+        text-decoration: none;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+
+        padding: 0.5rem 1rem;
+
+        border: 4px solid white;
+        background-color: white;
+        color: rgb(30,91,167);
+    }
+    
+    .button-blue:hover{
+        text-decoration: none;
+        font-weight: 700 ;
+        font-family: 'Montserrat', sans-serif;
+
+        padding: 0.5rem 1rem;
+
+        border: 4px solid rgb(30,91,167);
+        background-color: rgb(30,91,167);
+        color: white !important;
+    }
+
+
+    

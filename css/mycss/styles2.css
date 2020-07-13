@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: Montserrat;
+
+}
+/* essintials */
+
+.fullwidth{
+  width: 100% !important;
+}
+
+.fullheight{
+  height:100% !important ;
+}
+
+.vh{
+  height: 100vh !important;
+}
+
+.vw{
+  width: 100vw !important;
+}
+
+.pmtopbottom{
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.noP{
+  padding:0px;
+}
+
+.hide{
+  display: none;
+}
+
+.JundiBlue{color : #1e5ba7;}.JundiBlue1{color : #aeb7de;}.JundiBlue2{color : #5476b9;}.JundiBlue3{color : #23406c;}.JundiBlue4{color : #0f141e;}
+
+
+    /* Font styles */
+
+    .light{font-weight: 300;}.medium{font-weight: 500;}.bold{font-weight: 700;}
+
+    .rem05{font-size: 0.5rem;}.rem1{font-size: 1rem;}.rem1-5{font-size: 1.5rem;}.rem2{font-size: 2rem;}.rem3{ font-size: 3rem;}.rem4{font-size: 4rem;}.rem6{font-size: 6rem;}
+
+
+    /* align */
+
+    .center{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* essintials-ends */
+
+
+
+
+/* sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 0px 0 0; /* Height of navbar */
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
+    box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15)
+  }
+  
+
+  
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    
+  
+  
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+    /* icons and buttons */
+
+    #menu-icon , #x-icon{
+      position: absolute;
+      bottom: 0;
+      cursor: pointer;
+      padding: 33%;
+  }
+
+      /* Menu/sidebar */
+      
+        .menu{
+          position: fixed;
+          text-align: left;
+          font-size: 2rem;
+          background-color: white;
+          
+          z-index: 3;
+          width: 100vw;
+          height: 100vh;
+          padding-left :2rem;
+          
+        }
+    
+        .menu ul{
+          margin-top: 4rem;
+          margin-left: 8rem;
+        }
+
+        .menu ul li{
+            list-style-type: none;
+            margin-bottom:5px ;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color:#1e5ba7;
+            font-weight: 300;
+            transition: 0.09s;
+        
+        }
+        
+        .menu ul li a:hover{
+            text-decoration: none;
+            color:#1e5ba7;
+            font-weight: 700;
+        
+        }
+        
+        #menu-icon:hover{
+            
+            fill: none;
+            stroke: #1e5ba7;
+            stroke-width: 3px;     
+        }
+
+        #x-icon:hover{
+            
+            fill: none;
+            stroke: #1e5ba7;
+            stroke-width: 3px;
+        }
+
+
+
+/* sidebar-ends */
+
+
+
+
+
+
+/* content */
+
+  /* no extra-padding */
+    .col-1, .col-10 ,.col-11,.col-md-10,.col-lg-11 {
+      padding-top: 0px;
+      padding: 0px;
+      }
+  
+  /* content-spacing */
+  .container-fluid{
+    padding-right:10%;
+    padding-left:10%;
+    padding-top:5rem;
+    max-width: 1550px;
+  }
+
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /* .col-md-6 img{
+    height: 100vh;
+    max-height: 819px !important;
+    padding: 0 5% 0 5%;
+  } */
+  
+/* content-ends */
+
+
+
+
+
+/* logo */
+
+.logo-container{
+    padding: 33%;
+    /* padding-top: 2.5rem; */
+}
+
+
+
+/* logo-ends */
+
+
+
+/* for mobile */
+
+
+      /* topbar */
+    
+      .topbar{
+        height: 125px ;
+        padding:0  10% ;
+        position:fixed ;
+        z-index: 99;
+        background-color: white; 
+
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
+        box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15)       
+
+      }
+
+      #iconwithtype{
+        height: 70px;
+        margin-top: 27.5px;
+        padding:  0;
+        position: absolute;
+      }
+
+
+      @media (max-width: 767.98px) {
+
+        /* essintials-mobile */
+        .hide-mobile{
+          display: none ;
+        }
+
+        .sidebar {
+          display: none;
+        }
+        .topbar{
+          visibility: visible;
+          
+        }
+        #menu-icon-mobile,#x-icon-mobile{
+
+          position: absolute;
+          height:35;
+          margin-top: 45;
+          right:0;
+          padding:0 10%;
+          cursor:pointer;
+          
+        }
+
+        .menu {
+
+          padding-left: 0;
+          padding-left: 10%;
+
+        }
+        .menu ul{
+
+          margin-left: 0;
+          margin-top:150px;
+
+        }
+
+        /* content */
+
+
+      }
+
+
+      @media (min-width: 767.98px) {
+
+        .topbar{
+          display: none;
+        }
+
+        .row-content{
+          height: 100vh;
+        
+        }
+        .col-md-7 img{
+          object-fit: contain;
+          height: 100vh;
+          width: 100%;
+          
+        }
+
+        .main-text{
+          margin-top: 2rem;
+        }
+        
+        #logotype{
+          width: 70%;
+        }
+        
+
+      }
+
+
+
+      /* content on mobile */
+
+      @media (max-width: 767.98px) {
+
+ 
+        h1{
+          font-size: 2rem;
+        }
+
+        .row-content-mobile{
+          padding:  0 0 0;
+          height: 100vh;
+          margin-top: 125px;
+          /* position: relative; */
+          width: 100%;
+
+        }
+
+        
+
+
+        .col-md-5 h1{
+          font-size: 2.9rem;
+          margin-top:3rem;
+          margin-left: 10%;
+          
+        }
+        .col-md-5{
+          padding:0;
+          
+  
+        }
+  
+        .col-md-7 img{
+          
+          height: 100%;
+          object-fit: cover;
+          width: 100%; 
+          position: relative;
+        }
+  
+
+      }
+
+
+      .container-fluid{
+        padding: 0  0 0 0 ;
+        
+      }
