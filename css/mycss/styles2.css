@@ -104,7 +104,7 @@ body{
 
     #menu-icon , #x-icon{
       position: absolute;
-      bottom: 25px;
+      bottom: 50px;
       cursor: pointer;
       padding: 33%;
   }
