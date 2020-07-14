@@ -1,7 +1,6 @@
 $(".menu-button").click(function(){
     $(".menu-button").fadeOut().addClass("hide");
     $(".x-button").fadeIn().removeClass("hide");
-    $(".sidebar").animate({width:"100vw"});
     $(".menu").fadeIn().removeClass("hide");
     
 
@@ -10,7 +9,6 @@ $(".menu-button").click(function(){
 $(".x-button").click(function(){
     $(".x-button").fadeOut().addClass("hide");
     $(".menu-button").fadeIn().removeClass("hide");
-    $(".sidebar").animate({width:"125px"});
     $(".menu").fadeOut().addClass("hide");
 })
 
