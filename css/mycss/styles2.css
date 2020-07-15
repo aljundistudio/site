@@ -12,10 +12,11 @@ body{
 }
 
 _::-webkit-full-page-media, _:future, :root .safari_only {
-
+  
+  body{
   color:#0000FF; 
   background-color:#CCCCCC; 
-
+    }
 }
 
 /* essintials */
