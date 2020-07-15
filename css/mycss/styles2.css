@@ -8,15 +8,14 @@
 
 body{
   font-family: Montserrat;
-
+   display:none;
 }
 
-_::-webkit-full-page-media, _:future, :root .safari_only {
-  
-  body{
-  color:#0000FF; 
-  background-color:#CCCCCC; 
-    }
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+    body{
+    display:block;
+        }
 }
 
 /* essintials */
