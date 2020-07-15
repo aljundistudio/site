@@ -5,10 +5,19 @@
 }
 
 
+
 body{
   font-family: Montserrat;
 
 }
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+
+  color:#0000FF; 
+  background-color:#CCCCCC; 
+
+}
+
 /* essintials */
 
 .col-md-1, .col-lg-1, .col-md-10, .col-lg-10, .col-md-7, .col-lg-7 ,.px-md-4{
