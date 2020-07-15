@@ -236,6 +236,7 @@ hr{
         padding:0  10% ;
         position:fixed ;
         z-index: 99;
+          top:0px;
         background-color: white; 
 
         -webkit-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
