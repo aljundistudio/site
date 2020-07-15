@@ -5,12 +5,10 @@
 }
 
 
-
 body{
   font-family: Montserrat;
-   display:none;
-}
 
+}
 /* essintials */
 
 .col-md-1, .col-lg-1, .col-md-10, .col-lg-10, .col-md-7, .col-lg-7 ,.px-md-4{
@@ -120,7 +118,7 @@ hr{
 
     #menu-icon , #x-icon{
       position: absolute;
-      bottom: 20px;
+      bottom:0px;
       cursor: pointer;
       padding: 33%;
       
@@ -238,7 +236,7 @@ hr{
         padding:0  10% ;
         position:fixed ;
         z-index: 99;
-          top:0px;
+        top: 0px;
         background-color: white; 
 
         -webkit-box-shadow: 0px 0px 20px 0px rgba(15,20,30,0.15);
@@ -513,3 +511,90 @@ hr{
         
                 }
       }
+
+      @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #menu-icon , #x-icon{
+      bottom :70px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #menu-icon , #x-icon{
+      bottom :80px;
+    }
+}
