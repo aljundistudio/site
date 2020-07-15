@@ -11,6 +11,10 @@ body{
 }
 /* essintials */
 
+.col-md-1, .col-lg-1, .col-md-10, .col-lg-10, .col-md-7, .col-lg-7 ,.px-md-4{
+  padding: 0px !important;
+}
+
 .fullwidth{
   width: 100% !important;
 }
@@ -38,6 +42,16 @@ body{
 
 .hide{
   display: none;
+}
+
+hr{
+  
+  border-width:0.5px;
+  border-color: #23406c;
+  width: 100%;
+  margin:0;
+
+  
 }
 
 .JundiBlue{color : #1e5ba7;}.JundiBlue1{color : #aeb7de;}.JundiBlue2{color : #5476b9;}.JundiBlue3{color : #23406c;}.JundiBlue4{color : #0f141e;}
@@ -104,9 +118,10 @@ body{
 
     #menu-icon , #x-icon{
       position: absolute;
-      bottom: 50px;
+      bottom: 20px;
       cursor: pointer;
       padding: 33%;
+      
   }
 
       /* Menu/sidebar */
@@ -191,12 +206,6 @@ body{
     margin-left: 0px;
     margin-right: 0px;
   }
-
-  /* .col-md-6 img{
-    height: 100vh;
-    max-height: 819px !important;
-    padding: 0 5% 0 5%;
-  } */
   
 /* content-ends */
 
@@ -223,7 +232,7 @@ body{
       /* topbar */
     
       .topbar{
-        height: 125px ;
+        height: 90px ;
         padding:0  10% ;
         position:fixed ;
         z-index: 99;
@@ -236,8 +245,8 @@ body{
       }
 
       #iconwithtype{
-        height: 70px;
-        margin-top: 27.5px;
+        height: 50px;
+        margin-top: 20px;
         padding:  0;
         position: absolute;
       }
@@ -253,15 +262,12 @@ body{
         .sidebar {
           display: none;
         }
-        .topbar{
-          visibility: visible;
-          
-        }
+
         #menu-icon-mobile,#x-icon-mobile{
 
           position: absolute;
-          height:35;
-          margin-top: 45;
+          height:25px;
+          margin-top: 32.5;
           right:0;
           padding:0 10%;
           cursor:pointer;
@@ -304,14 +310,57 @@ body{
           
         }
 
+        
         .main-text{
-          margin-top: 2rem;
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          
+
         }
         
         #logotype{
           width: 70%;
         }
-        
+
+
+
+        .btn-jundi{
+          /* margin-left: 10%; */
+
+          background: rgb(214,101,89);
+          background: linear-gradient(90deg, rgba(214,101,89,1) 0%, rgba(172,112,172,1) 25%, rgba(84,118,185,1) 50%, rgba(159,206,149,1) 75%, rgba(255,242,117,1) 100%);
+          color: white;
+          font-size: 1.5vw;
+          font-weight: 700;
+          text-align: left;
+          padding: 5% 20% 5% 7%;
+          
+        }
+
+        .hide-desk{
+          display: none;
+        }
+
+        .mobile-content{
+          display: none;
+        }
+
+        .btn-jundi:hover{
+          transition: ease-in 0.1s;
+          text-decoration: none;
+          color: white;
+          
+          padding-right: 25%;
+
+        }
+
+        .col-md-7 , .col-md-5 .col-md-1{
+          height: 100%;
+        }
+
+
 
       }
 
@@ -322,47 +371,142 @@ body{
       @media (max-width: 767.98px) {
 
  
-        h1{
-          font-size: 2rem;
+
+
+
+        .mobile-content{
+          /* display: block; */
+          margin-top: 90px;
+          padding-left: 10%;
+          padding-right: 10%;
+          
         }
 
-        .row-content-mobile{
-          padding:  0 0 0;
-          height: 100vh;
-          margin-top: 125px;
-          /* position: relative; */
+        .me-with-logos{
+         position: relative;
           width: 100%;
+          
+          margin: 0 auto;
+          padding-left: 3%;
+        }
 
+        .mobile-content h1{
+          font-size: 1.7rem;
+        }
+        .mobile-content p{
+          font-size: 0.9rem;
         }
 
         
+        .btn-jundi{
+          /* margin-left: 10%; */
 
+          background: rgb(214,101,89);
+          background: linear-gradient(90deg, rgba(214,101,89,1) 0%, rgba(172,112,172,1) 25%, rgba(84,118,185,1) 50%, rgba(159,206,149,1) 75%, rgba(255,242,117,1) 100%);
+          
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 700;
+          text-align: left;
+          padding: 15px 60px 15px 30px;
+          
+        }
 
-        .col-md-5 h1{
-          font-size: 2.9rem;
-          margin-top:3rem;
-          margin-left: 10%;
-          
+        .btn-jundi:hover{
+          text-decoration: none;
+          color: white;
         }
-        .col-md-5{
-          padding:0;
-          
-  
-        }
-  
-        .col-md-7 img{
-          
-          height: 100%;
-          object-fit: cover;
-          width: 100%; 
-          position: relative;
-        }
-  
 
       }
 
 
       .container-fluid{
         padding: 0  0 0 0 ;
+        background: linear-gradient();
         
+      }
+
+      @media (min-height: 1025px){
+        .mobile-content{
+          display: block;
+          margin-top: 90px;
+          padding-left: 10%;
+          padding-right: 10%;
+          
+        }
+
+        .topbar{
+          display: block;
+        }
+
+        .me-with-logos{
+         position: relative;
+          width: 100%;
+          
+          margin: 0 auto;
+          padding-left: 3%;
+        }
+
+        .mobile-content h1{
+          font-size: 1.7rem;
+        }
+        .mobile-content p{
+          font-size: 0.9rem;
+        }
+
+        
+        .btn-jundi{
+          /* margin-left: 10%; */
+
+          background: rgb(214,101,89);
+          background: linear-gradient(90deg, rgba(214,101,89,1) 0%, rgba(172,112,172,1) 25%, rgba(84,118,185,1) 50%, rgba(159,206,149,1) 75%, rgba(255,242,117,1) 100%);
+          
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 700;
+          text-align: left;
+          padding: 15px 60px 15px 30px;
+          
+        }
+
+        .btn-jundi:hover{
+          text-decoration: none;
+          color: white;
+        }
+
+                /* essintials-mobile */
+                .hide-mobile{
+                  display: none ;
+                }
+        
+                .sidebar {
+                  display: none;
+                }
+                .topbar{
+                  visibility: visible;
+                  
+                }
+                #menu-icon-mobile,#x-icon-mobile{
+        
+                  position: absolute;
+                  height:25;
+                  margin-top: 32.5;
+                  right:0;
+                  padding:0 10%;
+                  cursor:pointer;
+                  
+                }
+        
+                .menu {
+        
+                  padding-left: 0;
+                  padding-left: 10%;
+        
+                }
+                .menu ul{
+        
+                  margin-left: 0;
+                  margin-top:150px;
+        
+                }
       }
